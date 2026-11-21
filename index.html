@@ -792,6 +792,13 @@ dialog.flip::backdrop{background:rgba(18,24,38,.78);backdrop-filter:blur(3px)}
 /* hidden copy used to measure the longest language */
 .lang-measure{position:absolute!important;left:-9999px!important;top:0!important;visibility:hidden!important;pointer-events:none!important}
 .lang-measure *{animation:none!important;transition:none!important}
+</style><style>/* Julia 22.11: no blue frame on click or tap */
+html{-webkit-tap-highlight-color:transparent}
+*,*::before,*::after{-webkit-tap-highlight-color:transparent}
+:focus:not(:focus-visible){outline:none!important}
+dialog:focus,dialog:focus-visible{outline:none}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--navy)}
+html.ptr :focus,html.ptr :focus-visible{outline:none!important}
 </style></head>
 <body id="top">
 <header><div class="wrap">
@@ -3088,4 +3095,5 @@ const pvPages = (b) => Array.from({length: PREVIEW[b.code][0]}, (_, i) => `previ
   }
 })();
 </script>
-</body></html>
+<script>/* Julia 22.11: frame only for keyboard users */
+(function(){const r=document.documentElement;let p=false;addEventListener("pointerdown",()=>{p=true;r.classList.add("ptr");},true);addEventListener("keydown",()=>{p=false;r.classList.remove("ptr");},true);document.querySelectorAll("dialog").forEach(d=>d.addEventListener("close",()=>{if(p)setTimeout(()=>{const a=document.activeElement;if(a&&a!==document.body)a.blur();},0);}));})();</script></body></html>
