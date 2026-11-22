@@ -3096,4 +3096,15 @@ const pvPages = (b) => Array.from({length: PREVIEW[b.code][0]}, (_, i) => `previ
 })();
 </script>
 <script>/* Julia 22.11: frame only for keyboard users */
-(function(){const r=document.documentElement;let p=false;addEventListener("pointerdown",()=>{p=true;r.classList.add("ptr");},true);addEventListener("keydown",()=>{p=false;r.classList.remove("ptr");},true);document.querySelectorAll("dialog").forEach(d=>d.addEventListener("close",()=>{if(p)setTimeout(()=>{const a=document.activeElement;if(a&&a!==document.body)a.blur();},0);}));})();</script></body></html>
+(function(){const r=document.documentElement;let p=false;addEventListener("pointerdown",()=>{p=true;r.classList.add("ptr");},true);addEventListener("keydown",()=>{p=false;r.classList.remove("ptr");},true);document.querySelectorAll("dialog").forEach(d=>d.addEventListener("close",()=>{if(p)setTimeout(()=>{const a=document.activeElement;if(a&&a!==document.body)a.blur();},0);}));})();</script>
+<script>
+/* deep links: juliamirkuenglish.com/#three-first-stories (or #PayhipCode) opens that book */
+(function(){
+  const slug=t=>t.toLowerCase().replace(/['’]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+  const find=h=>{h=decodeURIComponent(h||'').replace(/^#/,'').toLowerCase();if(!h)return null;return BOOKS.find(b=>slug(b.title)===h||b.code.toLowerCase()===h)||null;};
+  const go=()=>{const b=find(location.hash);if(!b)return;const sec=document.getElementById('books');if(sec)sec.scrollIntoView({behavior:'instant',block:'start'});setTimeout(()=>{if(dlg.open)dlg.close();openBook(b.code);},150);};
+  if(document.readyState==='complete')go();else addEventListener('load',go);
+  addEventListener('hashchange',go);
+})();
+</script>
+</body></html>
