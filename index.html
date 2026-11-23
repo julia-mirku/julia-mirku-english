@@ -863,7 +863,7 @@ html.ptr :focus,html.ptr :focus-visible{outline:none!important}
   background:linear-gradient(90deg,rgba(0,0,0,.34),rgba(255,255,255,.18) 50%,rgba(0,0,0,.2)),var(--cv) left center/auto 100% no-repeat,#EFE8DB}
 .fb-stage.cov .fb-thick{opacity:1}
 @media (prefers-reduced-motion:reduce){.book.opening .b3d .bk-flap,.book.opening .b3d .bk-flap>i{animation:none}}
-</style></head>
+</style><style>/* patch27 */.fb-buy{display:flex;flex-direction:column;align-items:center;gap:10px}.fb-endin .btn.ghost{min-height:44px;font-size:.92rem}</style></head>
 <body id="top">
 <header><div class="wrap">
   <a class="brand" href="#top">Julia Mirku</a>
@@ -1727,7 +1727,7 @@ const tt=document.querySelector('.to-top');
 if(tt){tt.hidden=false;const tog=()=>tt.classList.toggle('on',scrollY>innerHeight);addEventListener('scroll',tog,{passive:true});tog();}
 </script>
 <script>
-const PREVIEW = {"1DcEd":[7,1.2941],"2dAgE":[8,1.2952],"3wrg0":[7,1.2941],"5LyWR":[8,1.2941],"5pksS":[7,1.2952],"6K3SX":[8,1.2941],"6f5Ah":[7,1.2941],"7YHCD":[7,1.2952],"8ApEs":[8,1.2941],"FLCYX":[7,1.2941],"ImCs2":[8,1.2941],"N9Sx6":[7,1.2941],"QCi49":[7,1.2952],"ROpsF":[6,1.415],"SsREa":[7,1.2941],"Vyoln":[7,1.2941],"Wn5Pd":[7,1.2952],"Wz9NU":[6,1.2952],"XNA67":[7,1.2952],"XUs3I":[7,1.2952],"gS4kI":[7,1.2952],"nD87s":[7,1.2941],"pGuYQ":[7,1.2941],"qApw4":[7,1.2952],"rKWIM":[8,1.2941],"s8IAV":[8,1.2941],"uE0n6":[7,1.2941],"wbt7v":[7,1.2941]};
+const PREVIEW = {"1DcEd":[7,1.2941],"2dAgE":[8,1.2952],"3wrg0":[7,1.2941],"5LyWR":[8,1.2941],"5pksS":[7,1.2952],"6K3SX":[8,1.2941],"6f5Ah":[7,1.2941],"7YHCD":[7,1.2952],"8ApEs":[8,1.2941],"FLCYX":[7,1.2941],"ImCs2":[8,1.2941],"N9Sx6":[7,1.2941],"QCi49":[7,1.2952],"ROpsF":[6,1.415],"SsREa":[7,1.2941],"Vyoln":[7,1.2941],"Wn5Pd":[7,1.2952],"Wz9NU":[6,1.2952],"XNA67":[7,1.2952],"XUs3I":[7,1.2952],"gS4kI":[7,1.2952],"nD87s":[7,1.2941],"pGuYQ":[7,1.2941],"qApw4":[7,1.2952],"rKWIM":[9,1.2941],"s8IAV":[8,1.2941],"uE0n6":[7,1.2941],"wbt7v":[7,1.2941]};
 const COVER_AR = {"lostfound":0.5459,"5pksS":0.7725,"bw92R":1.0,"gS4kI":0.7725,"QnCWf":0.7053,"SsREa":0.7728,"tPKDU":0.7732,"LNzoe":1.0,"gZ3OM":0.7725,"s8IAV":0.7725,"speaking":0.7732,"05N4L":0.7725,"mi8ek":0.7725,"6K3SX":0.7048,"3wrg0":0.7732,"ayA8P":1.0,"5LyWR":0.7053,"FLCYX":0.7732,"Wn5Pd":0.7725,"RNXO4":0.7732,"qApw4":0.7725,"7YHCD":0.7725,"2dAgE":0.7725,"QCi49":0.7725,"wbt7v":0.7732,"pGuYQ":0.7725,"rKWIM":0.7048,"6f5Ah":0.7732,"Sohy4":0.7725,"XUs3I":0.7725,"ROpsF":0.707,"sQjEx":1.0,"bAGPY":0.7725,"8oLFO":1.0,"27eNz":1.0,"N9Sx6":0.7725,"nD87s":0.7732,"u158F":1.0,"Wz9NU":0.7725,"2c51O":0.7053,"ImCs2":0.7053,"8ApEs":0.7042,"Ff6ob":0.7048,"uE0n6":0.7732,"XNA67":0.7725,"jz2P9":1.0,"FyNEO":1.0,"1DcEd":0.7725,"amAQN":0.7048,"jYhSH":0.7732,"Vyoln":0.7725,"tmjLY":1.0,"E9tAf":1.0};
 const PAYMENT = {
   buyUrl: (book) => 'https://payhip.com/buy?link=' + book.code,
@@ -3015,7 +3015,8 @@ const pvPages = (b) => Array.from({length: PREVIEW[b.code][0]}, (_, i) => `previ
   let pf = null, B = null, PAGES = [], portrait = false, busy = false;
   const endHTML = () => {
     const buy = B.amazonOnly ? '' : `<a class="btn primary" href="${esc(PAYMENT.buyUrl(B))}" target="_blank" rel="noopener">Buy PDF · ${money(B.price)}</a>`;
-    return `<div class="fb-endin"><h4>Enjoyed the first pages?</h4><p>The full PDF is emailed to you straight after payment.</p><div>${buy}</div></div>`;
+    const az = B.amazon || {}, al = [az.paperback ? `<a class="btn ghost" href="${amz(az.paperback)}" target="_blank" rel="noopener">Paperback on Amazon</a>` : '', az.kindle ? `<a class="btn ghost" href="${amz(az.kindle)}" target="_blank" rel="noopener">Kindle on Amazon</a>` : ''].join('');
+    return `<div class="fb-endin"><h4>Enjoyed the first pages?</h4>${B.amazonOnly ? '' : '<p>The full PDF is emailed to you straight after payment.</p>'}<div class="fb-buy">${buy}${al}</div></div>`;
   };
   const low = () => matchMedia('(max-height:520px)').matches;
   function dims() {
