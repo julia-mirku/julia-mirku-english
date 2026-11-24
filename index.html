@@ -14,7 +14,7 @@ if(window.matchMedia&&!matchMedia('(prefers-reduced-motion:reduce)').matches){d.
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230CC0D4'/%3E%3Cpath d='M16 18h32a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H32l-10 8v-8h-6a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6z' fill='%23fff'/%3E%3Cpath d='M36 24v12a5 5 0 0 1-10 0' fill='none' stroke='%2317303A' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#EEF2FA">
 <style>
-:root{--bg:#F3F7FB;--surface:#fff;--soft:#DCE8F5;--ink:#2B4272;--ink2:#4D5E80;--line:#DCE5F0;--btn:#FB8671;--btn-ink:#1E2B4A;
+:root{--bg:#F3F7FB;--surface:#fff;--soft:#DCE8F5;--ink:#2B4272;--ink2:#4D5E80;--line:#DCE5F0;--btn:#6F8FC4;--btn-ink:#1E2B4A;
 --head:Manrope;--body:'Nunito Sans';--max:1180px}
 *{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body),system-ui,sans-serif}
@@ -149,7 +149,7 @@ dialog::backdrop{background:rgba(43,66,114,.3)}
 
 /* TILDA colours (Julia 18.11: take colours from yuliagnatok.tilda.ws, blocks must not blend):
    heading blue #3A5696, turquoise #5B7BC0, near-black body text, clear white / blue bands, cards with outlines */
-:root{--ink:#17303A;--text:#1F2733;--ink2:#48585F;--teal:#5B7BC0;--teal-soft:#FFE7E0;--band:#EEF2FA;--line:#D7DFEC;--soft:#FFE7E0}
+:root{--ink:#17303A;--text:#1F2733;--ink2:#48585F;--teal:#5B7BC0;--teal-soft:#E3EAF6;--band:#EEF2FA;--line:#D7DFEC;--soft:#E3EAF6}
 body{color:var(--text)}
 h1,h2,h3,.h2,.brand,.acc-head,.title,.who,.price,.facts b,figcaption b{color:var(--ink)}
 .hero-sub,.hero-line{color:var(--text)}
@@ -238,7 +238,7 @@ a,button{-webkit-tap-highlight-color:transparent}
 .btn,.btn2,.hbtn,.chip,.langs button{transition:transform .18s cubic-bezier(.2,.7,.2,1),box-shadow .18s ease,background-color .18s ease,border-color .18s ease,color .18s ease}
 @media (hover:hover){
  .btn:hover{transform:translateY(-2px)}
- .cta .btn:hover,.btn-coral:hover{box-shadow:0 12px 22px -12px rgba(251,134,113,.9)}
+ .cta .btn:hover,.btn-coral:hover{box-shadow:0 12px 22px -12px rgba(111,143,196,.9)}
  .btn.ghost:hover{box-shadow:none;background:var(--teal-soft);border-color:var(--teal)}
  .btn2:hover,.hbtn:hover{background:var(--teal-soft);transform:translateY(-2px)}
  .chip:hover{border-color:var(--teal);background:var(--teal-soft)}
@@ -407,7 +407,7 @@ html.lang-swap main{opacity:0}
 #services .acc-head{pointer-events:none;cursor:default;padding:22px 26px 6px;font-size:1.25rem;gap:12px}
 #services .plus{display:none}
 #services .acc-num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;font-size:.85rem;color:#fff;background:var(--teal)}
-#services .acc-item:nth-child(2) .acc-num{background:#FB8671}
+#services .acc-item:nth-child(2) .acc-num{background:#6F8FC4}
 #services .acc-item:nth-child(3) .acc-num{background:#2B4272}
 #services .acc-item:nth-child(4) .acc-num{background:#9B85E6}
 #services .acc-panel,.js #services .acc-panel,.js #services .acc-item.open .acc-panel{display:block;grid-template-rows:none;max-height:none;overflow:visible;transition:none}
@@ -421,7 +421,7 @@ html.lang-swap main{opacity:0}
 @media (max-width:860px){#services .acc{grid-template-columns:1fr}#services .acc-panel-inner{padding:6px 20px 22px}#services .acc-head{padding:20px 20px 4px}}
 /* colourful icon discs in "Why study with me" */
 #why .why-card:nth-child(1) .why-check{background:#5B7BC0}
-#why .why-card:nth-child(2) .why-check{background:#FB8671}
+#why .why-card:nth-child(2) .why-check{background:#6F8FC4}
 #why .why-card:nth-child(3) .why-check{background:#FFC857}
 #why .why-card:nth-child(4) .why-check{background:#2B4272}
 #why .why-check svg,#why .why-check svg .a{stroke:#fff}
@@ -430,8 +430,8 @@ html.lang-swap main{opacity:0}
 .cert img[src*="cert_futurelearn_2026"]{object-position:50% 30%}
 
 /* ===== Julia 18.11: white + navy + coral, livelier ===== */
-:root{--ink:#2B4272;--text:#1F2733;--ink2:#4D5E80;--teal:#FB8671;--teal-soft:#FFE7E0;--band:#EEF2FA;--line:#D7DFEC;--soft:#EEF2FA;
---coral:#FB8671;--coral-deep:#E8664F;--peach:#FFF3EE;--navy:#2B4272;--navy-mid:#5B7BC0}
+:root{--ink:#2B4272;--text:#1F2733;--ink2:#4D5E80;--teal:#6F8FC4;--teal-soft:#E3EAF6;--band:#EEF2FA;--line:#D7DFEC;--soft:#EEF2FA;
+--coral:#6F8FC4;--coral-deep:#4E6EA5;--peach:#EEF2FA;--navy:#2B4272;--navy-mid:#5B7BC0}
 html,body{background:#fff}
 header{background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--line)}
 .hero{background:#fff!important}
@@ -469,17 +469,17 @@ section>.wrap{position:relative;z-index:1}
 @media (hover:hover){.res-card:hover{transform:rotate(0) translateY(-4px);box-shadow:9px 9px 0 var(--coral)!important}}
 /* why: coloured top edges and discs */
 .why-card{border-radius:20px!important;border:1px solid var(--line)!important;border-top:6px solid var(--coral)!important;transition:transform .25s ease}
-#why .why-card:nth-child(2){border-top-color:var(--navy)!important}#why .why-card:nth-child(3){border-top-color:#FFB59F!important}#why .why-card:nth-child(4){border-top-color:var(--navy-mid)!important}
+#why .why-card:nth-child(2){border-top-color:var(--navy)!important}#why .why-card:nth-child(3){border-top-color:#C9D6EE!important}#why .why-card:nth-child(4){border-top-color:var(--navy-mid)!important}
 #why .why-card:nth-child(1) .why-check{background:var(--coral)!important}
 #why .why-card:nth-child(2) .why-check{background:var(--navy)!important}
-#why .why-card:nth-child(3) .why-check{background:#FFB59F!important}
+#why .why-card:nth-child(3) .why-check{background:#C9D6EE!important}
 #why .why-card:nth-child(4) .why-check{background:var(--navy-mid)!important}
 #why .why-card:nth-child(3) .why-check svg,#why .why-card:nth-child(3) .why-check svg .a{stroke:var(--navy)!important}
 @media (hover:hover){.why-card:hover{transform:translateY(-5px) rotate(-.6deg)}}
 /* services number discs */
 #services .acc-num{background:var(--coral)!important}
 #services .acc-item:nth-child(2) .acc-num{background:var(--navy)!important}
-#services .acc-item:nth-child(3) .acc-num{background:#FFB59F!important;color:var(--navy)!important}
+#services .acc-item:nth-child(3) .acc-num{background:#C9D6EE!important;color:var(--navy)!important}
 #services .acc-item:nth-child(4) .acc-num{background:var(--navy-mid)!important}
 #services .acc-item{border-radius:24px!important;box-shadow:0 14px 30px -24px rgba(43,66,114,.5)}
 /* reviews: big coral quote mark */
@@ -500,7 +500,7 @@ section>.wrap{position:relative;z-index:1}
 
 /* ===== Julia 18.11 (dictated): first screen rework and lighter touches ===== */
 /* 1a heading: heavier Manrope, tighter tracking, soft coral offset shadow */
-.hero h1{font-weight:800;letter-spacing:-.03em;line-height:1.06;text-shadow:.05em .05em 0 rgba(251,134,113,.3)}
+.hero h1{font-weight:800;letter-spacing:-.03em;line-height:1.06;text-shadow:.05em .05em 0 rgba(111,143,196,.3)}
 /* 1b photo higher: the photo is as tall as the text column (top of the photo level with the heading, bottom on the
    bottom edge of the first screen); it is sized by height, so it never leaves an empty band above her head. It starts
    40px into the gap on the left and ends at the screen edge; where the screen is narrow only the side shapes of the
@@ -530,10 +530,10 @@ section>.wrap{position:relative;z-index:1}
 .hero-sub{display:flex;flex-wrap:wrap;gap:8px;padding:0;border:0;margin:4px 0 14px}
 .hero-sub span{display:inline-flex;align-items:center;gap:9px;padding:8px 14px 8px 11px;border-radius:999px;background:#fff;border:1.5px solid var(--line);font:700 .9rem/1.2 var(--head),sans-serif;color:var(--navy);box-shadow:0 8px 18px -14px rgba(43,66,114,.5)}
 .hero-sub span::before{content:"";flex:0 0 9px;width:9px;height:9px;border-radius:50%;background:var(--coral)}
-.hero-sub span:nth-child(2){background:var(--peach);border-color:#FFD9CE}
+.hero-sub span:nth-child(2){background:var(--peach);border-color:#C9D6EE}
 .hero-sub span:nth-child(2)::before{background:var(--navy)}
 .hero-sub span:nth-child(3){background:var(--band);border-color:#DCE4F5}
-.hero-sub span:nth-child(3)::before{background:var(--coral);box-shadow:0 0 0 3px #FFD9CE}
+.hero-sub span:nth-child(3)::before{background:var(--coral);box-shadow:0 0 0 3px #C9D6EE}
 /* 1e live dot in the main buttons */
 .cta .btn[data-i18n="hero_cta"]::before,.final-card .btn::before{content:"";flex:0 0 10px;width:10px;height:10px;margin-right:11px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 2px #fff;animation:livedot 2s ease-out infinite}
 @keyframes livedot{0%{box-shadow:0 0 0 2px #fff,0 0 0 2px rgba(43,182,115,.6)}70%{box-shadow:0 0 0 2px #fff,0 0 0 11px rgba(43,182,115,0)}100%{box-shadow:0 0 0 2px #fff,0 0 0 11px rgba(43,182,115,0)}}
@@ -551,9 +551,9 @@ section>.wrap{position:relative;z-index:1}
 .mybooks a[data-code]:focus-visible{transform:translateY(-12px) rotate(0);z-index:6}
 @media (max-width:860px){.mybooks img{width:64px}.mybooks a[data-code]+a[data-code]{margin-left:-7px}.hero-sub span{font-size:.86rem;padding:7px 12px 7px 10px}}
 /* 2 header button: filled coral, glows */
-.hbtn{background:var(--coral)!important;border-color:var(--coral)!important;color:var(--navy)!important;box-shadow:0 6px 16px -8px rgba(239,106,79,.9)}
-@media (hover:hover){.hbtn:hover{background:#FF957F!important;transform:translateY(-2px);box-shadow:0 0 0 4px rgba(251,134,113,.25),0 10px 24px -6px rgba(239,106,79,.85)}}
-.hbtn:focus-visible{outline:3px solid var(--navy);outline-offset:3px;box-shadow:0 0 0 6px rgba(251,134,113,.3),0 10px 24px -6px rgba(239,106,79,.85)}
+.hbtn{background:var(--coral)!important;border-color:var(--coral)!important;color:var(--navy)!important;box-shadow:0 6px 16px -8px rgba(78,110,165,.9)}
+@media (hover:hover){.hbtn:hover{background:#9DB3DA!important;transform:translateY(-2px);box-shadow:0 0 0 4px rgba(111,143,196,.25),0 10px 24px -6px rgba(78,110,165,.85)}}
+.hbtn:focus-visible{outline:3px solid var(--navy);outline-offset:3px;box-shadow:0 0 0 6px rgba(111,143,196,.3),0 10px 24px -6px rgba(78,110,165,.85)}
 /* 3 About: round photo, coral ring, navy offset ring, coral quarter circle */
 .about-grid>.h2{grid-column:1;grid-row:1}
 .about-text{grid-column:2;grid-row:1/span 2}
@@ -566,13 +566,13 @@ section>.wrap{position:relative;z-index:1}
  #about::before{width:160px;height:160px;left:-100px;bottom:-100px}}
 /* 4 services: noticeable soft shadow and lift on hover */
 #services .acc-item{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease,border-color .25s ease!important}
-@media (hover:hover){#services .acc-item:hover{transform:translateY(-6px);border-color:#FFC9BC;box-shadow:0 28px 50px -20px rgba(43,66,114,.38),0 10px 20px -12px rgba(251,134,113,.45)}}
+@media (hover:hover){#services .acc-item:hover{transform:translateY(-6px);border-color:#FFC9BC;box-shadow:0 28px 50px -20px rgba(43,66,114,.38),0 10px 20px -12px rgba(111,143,196,.45)}}
 /* 5/6 level tag top-left, FREE sticker top-right: on the card's corner, off the printed cover */
 .tag{z-index:2}
 .book,.book .open,.book .cover{overflow:visible}
 .book .cover{border-radius:17px 17px 0 0}
 .extras-list .book .cover{border-radius:17px 0 0 17px}
-.sticker{position:absolute;right:8px;top:12px;z-index:3;background:#EF6A4F;color:#fff;font:800 .74rem/1 var(--head),sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:7px 11px 6px;border-radius:8px;border:3px solid #fff;box-shadow:0 8px 16px -6px rgba(43,66,114,.45);transform:rotate(-6deg);white-space:nowrap;pointer-events:none}
+.sticker{position:absolute;right:8px;top:12px;z-index:3;background:#4E6EA5;color:#fff;font:800 .74rem/1 var(--head),sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:7px 11px 6px;border-radius:8px;border:3px solid #fff;box-shadow:0 8px 16px -6px rgba(43,66,114,.45);transform:rotate(-6deg);white-space:nowrap;pointer-events:none}
 @keyframes wiggle{0%,100%{transform:rotate(-6deg)}25%{transform:rotate(-11deg) scale(1.06)}55%{transform:rotate(-2deg) scale(1.06)}80%{transform:rotate(-8deg)}}
 @media (hover:hover){.book:hover .sticker{animation:wiggle .6s ease}}
 #dlg .sticker{right:16px;top:18px;font-size:.9rem;padding:9px 14px 8px}
@@ -597,9 +597,9 @@ section>.wrap{position:relative;z-index:1}
 @media (min-width:861px) and (max-width:1180px){.final-card{column-gap:24px;padding:34px 30px}.final-card p{font-size:.95rem}.final-card .btn{max-width:20em}}
 /* 8 lighter touches: sparkle by "What students say", back to top with a coral ring, certificates tilt */
 .reviews .h2{display:inline-block;position:relative}
-.reviews .h2::before{content:"";position:absolute;right:-38px;top:-10px;width:28px;height:28px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M14 1c1 7 4 11 13 13-9 2-12 6-13 13-1-7-4-11-13-13 9-2 12-6 13-13z' fill='%23FB8671'/%3E%3C/svg%3E") center/contain no-repeat;animation:twinkle 3.2s ease-in-out infinite}
+.reviews .h2::before{content:"";position:absolute;right:-38px;top:-10px;width:28px;height:28px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M14 1c1 7 4 11 13 13-9 2-12 6-13 13-1-7-4-11-13-13 9-2 12-6 13-13z' fill='%236F8FC4'/%3E%3C/svg%3E") center/contain no-repeat;animation:twinkle 3.2s ease-in-out infinite}
 @keyframes twinkle{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(.72) rotate(25deg)}}
-.to-top{border:2px solid var(--coral)!important;box-shadow:0 0 0 5px rgba(251,134,113,.16),0 10px 22px -14px rgba(43,66,114,.5)}
+.to-top{border:2px solid var(--coral)!important;box-shadow:0 0 0 5px rgba(111,143,196,.16),0 10px 22px -14px rgba(43,66,114,.5)}
 @media (hover:hover){.to-top:hover{background:var(--coral)!important;color:var(--navy)}}
 @media (hover:hover){.cert:nth-child(odd) .thumb:hover{transform:translateY(-4px) rotate(-1.5deg)}.cert:nth-child(even) .thumb:hover{transform:translateY(-4px) rotate(1.5deg)}}
 @media (prefers-reduced-motion:reduce){.cta .btn::before,.final-card .btn::before,.reviews .h2::before,.book:hover .sticker{animation:none!important}#services .acc-item{transition:none!important}}
@@ -629,11 +629,11 @@ section>.wrap{position:relative;z-index:1}
 #services [data-i18n="svc_add_b1"],#services [data-i18n="svc_add_b2"]{position:relative;margin:0 0 12px!important;padding:16px 18px 16px 70px;
  border-radius:18px;color:var(--text,#1F2733)!important;line-height:1.5}
 #services [data-i18n="svc_add_b1"]{background:#EEF2FA;border:1.5px solid #C9D6EE}
-#services [data-i18n="svc_add_b2"]{background:#FFF3EE;border:1.5px dashed #FB8671}
+#services [data-i18n="svc_add_b2"]{background:#EEF2FA;border:1.5px dashed #6F8FC4}
 #services [data-i18n="svc_add_b1"]::before,#services [data-i18n="svc_add_b2"]::before{content:"";position:absolute;left:16px;top:16px;width:40px;height:40px;
  border-radius:12px;background-repeat:no-repeat;background-position:center;background-size:22px 22px}
 #services [data-i18n="svc_add_b1"]::before{background-color:#2B4272;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z'/%3E%3Cpath d='M14 3v4h4'/%3E%3Ccircle cx='12' cy='11' r='2'/%3E%3Cpath d='M8.5 17c.5-2 1.8-3 3.5-3s3 1 3.5 3'/%3E%3C/svg%3E")}
-#services [data-i18n="svc_add_b2"]::before{background-color:#FFB59F;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232B4272' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='9' width='18' height='12' rx='1.5'/%3E%3Cpath d='M3 13h18M12 9v12'/%3E%3Cpath d='M12 9c-2 0-5-1-5-3.2C7 4.5 8 4 9 4c2 0 3 3 3 5zM12 9c2 0 5-1 5-3.2C17 4.5 16 4 15 4c-2 0-3 3-3 5z'/%3E%3C/svg%3E");transform:rotate(-6deg)}
+#services [data-i18n="svc_add_b2"]::before{background-color:#C9D6EE;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232B4272' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='9' width='18' height='12' rx='1.5'/%3E%3Cpath d='M3 13h18M12 9v12'/%3E%3Cpath d='M12 9c-2 0-5-1-5-3.2C7 4.5 8 4 9 4c2 0 3 3 3 5zM12 9c2 0 5-1 5-3.2C17 4.5 16 4 15 4c-2 0-3 3-3 5z'/%3E%3C/svg%3E");transform:rotate(-6deg)}
 #services .add-lead{display:block;font-weight:800;font-family:var(--head),sans-serif;color:var(--navy,#2B4272);font-size:1.05rem;margin-bottom:2px}
 #services [data-i18n="svc_add_b1"]::before,#services [data-i18n="svc_add_b2"]::before{transition:transform .25s ease}
 @media (hover:hover){#services [data-i18n="svc_add_b2"]:hover::before{transform:rotate(6deg) scale(1.08)}
@@ -644,16 +644,16 @@ section>.wrap{position:relative;z-index:1}
 /* certificates: no tilt or lift, only an orange highlight */
 .cert .thumb,.cert:nth-child(odd) .thumb,.cert:nth-child(even) .thumb{transition:box-shadow .2s ease,border-color .2s ease}
 @media (hover:hover){.cert .thumb:hover,.cert:nth-child(odd) .thumb:hover,.cert:nth-child(even) .thumb:hover{transform:none!important;
- border-color:#FB8671!important;box-shadow:0 0 0 3px rgba(251,134,113,.35),0 10px 24px -14px rgba(251,134,113,.8)!important}}
-.cert .thumb:focus-visible{transform:none!important;box-shadow:0 0 0 3px rgba(251,134,113,.5)!important}
+ border-color:#6F8FC4!important;box-shadow:0 0 0 3px rgba(111,143,196,.35),0 10px 24px -14px rgba(111,143,196,.8)!important}}
+.cert .thumb:focus-visible{transform:none!important;box-shadow:0 0 0 3px rgba(111,143,196,.5)!important}
 /* service chips: one look for all three */
 .hero-sub span,.hero-sub span:nth-child(2),.hero-sub span:nth-child(3){background:#fff!important;border-color:var(--line)!important}
 .hero-sub span::before,.hero-sub span:nth-child(2)::before,.hero-sub span:nth-child(3)::before{background:var(--coral)!important;box-shadow:none!important}
 /* every "Book a free trial" button: lighter coral + the pulsing green dot (header button too) */
-:root{--cta-light:#FD9C8A}
+:root{--cta-light:#9DB3DA}
 .cta .btn,.final .btn,.hbtn{background:var(--cta-light)!important}
-.cta .btn{box-shadow:0 6px 0 #F27E68!important}
-@media (hover:hover){.cta .btn:hover{box-shadow:0 9px 0 #F27E68!important}}
+.cta .btn{box-shadow:0 6px 0 #4E6EA5!important}
+@media (hover:hover){.cta .btn:hover{box-shadow:0 9px 0 #4E6EA5!important}}
 .hbtn{display:inline-flex!important;align-items:center}
 .hbtn::before{content:"";flex:0 0 8px;width:8px;height:8px;margin-right:8px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 2px #fff;animation:livedot 2s ease-out infinite}
 .final .btn::before{content:"";flex:0 0 10px;width:10px;height:10px;margin-right:11px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 2px #fff;animation:livedot 2s ease-out infinite}
@@ -665,15 +665,15 @@ section>.wrap{position:relative;z-index:1}
 /* Julia 18.11: post a printed copy if Amazon does not deliver */
 .how{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 @media (max-width:860px){.how{grid-template-columns:1fr!important}}
-.how-post a{font-weight:700;color:var(--coral-deep,#E8664F);text-decoration:underline;text-underline-offset:3px}
+.how-post a{font-weight:700;color:var(--coral-deep,#4E6EA5);text-decoration:underline;text-underline-offset:3px}
 .post-note{margin:12px 0 0;font-size:.9rem;color:var(--ink2)}
 .post-note a{font-weight:700;color:var(--navy,#2B4272)}
 /* Julia 18.11: every card reacts to the pointer: the PDF / Amazon / post notes, reviews, contact buttons, planners */
 .how-item,.msg,.cbtn,.extras-list .book,.about-text>p:first-child{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
 @media (hover:hover){
- .how-item:hover{transform:translateY(-4px);box-shadow:0 16px 30px -18px rgba(43,66,114,.55),0 0 0 2px rgba(251,134,113,.45)}
+ .how-item:hover{transform:translateY(-4px);box-shadow:0 16px 30px -18px rgba(43,66,114,.55),0 0 0 2px rgba(111,143,196,.45)}
  .msg:hover{transform:translateY(-4px);box-shadow:0 18px 34px -22px rgba(43,66,114,.55)}
- .cbtn:hover{transform:translateY(-2px);box-shadow:0 10px 20px -12px rgba(43,66,114,.6);border-color:#FB8671!important}
+ .cbtn:hover{transform:translateY(-2px);box-shadow:0 10px 20px -12px rgba(43,66,114,.6);border-color:#6F8FC4!important}
  .extras-list .book:hover{transform:translateY(-4px);box-shadow:0 16px 30px -20px rgba(43,66,114,.55)}
 }
 @media (prefers-reduced-motion:reduce){.how-item,.msg,.cbtn,.extras-list .book{transition:none}.how-item:hover,.msg:hover,.cbtn:hover,.extras-list .book:hover{transform:none}}
@@ -681,10 +681,10 @@ section>.wrap{position:relative;z-index:1}
 /* Julia 18.11: one short line, the rest opens in a small box */
 .post-pop summary{cursor:pointer;list-style:none;font-weight:700;color:var(--navy,#2B4272);display:inline-flex;align-items:center;gap:8px}
 .post-pop summary::-webkit-details-marker{display:none}
-.post-pop summary::after{content:"";width:8px;height:8px;border-right:2px solid #FB8671;border-bottom:2px solid #FB8671;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease}
+.post-pop summary::after{content:"";width:8px;height:8px;border-right:2px solid #6F8FC4;border-bottom:2px solid #6F8FC4;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease}
 .post-pop[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
-.post-box{margin-top:10px;padding:12px 14px;background:#fff;border:1.5px dashed #FB8671;border-radius:14px;font-size:.92rem;color:var(--ink2);animation:popIn .2s ease}
-.post-box a{font-weight:700;color:#E8664F;text-decoration:underline;text-underline-offset:3px}
+.post-box{margin-top:10px;padding:12px 14px;background:#fff;border:1.5px dashed #6F8FC4;border-radius:14px;font-size:.92rem;color:var(--ink2);animation:popIn .2s ease}
+.post-box a{font-weight:700;color:#4E6EA5;text-decoration:underline;text-underline-offset:3px}
 @keyframes popIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.post-box{animation:none}}
 
@@ -744,14 +744,14 @@ dialog.flip::backdrop{background:rgba(18,24,38,.78);backdrop-filter:blur(3px)}
 .fb-book.single .fb-leaf{left:0;width:100%}
 .fb-book.single .fb-leaf.flipped{transform:rotateY(-100deg);opacity:0;transition:transform .8s cubic-bezier(.45,.05,.2,1),opacity .35s .45s}
 .fb-shadow{position:absolute;inset:auto 4% -26px;height:30px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.45),transparent);transform:translateZ(-1px)}
-.fb-end{display:grid;place-content:center;gap:14px;text-align:center;padding:10%;background:linear-gradient(160deg,#FFF3EE,#FFFFFF)!important;color:#1F2733}
+.fb-end{display:grid;place-content:center;gap:14px;text-align:center;padding:10%;background:linear-gradient(160deg,#EEF2FA,#FFFFFF)!important;color:#1F2733}
 .fb-end h4{font-family:var(--head),sans-serif;font-size:clamp(1.05rem,2.2vw,1.45rem);color:#2B4272;margin:0}
 .fb-end p{margin:0;font-size:clamp(.85rem,1.5vw,.98rem);color:#48585F}
 .fb-end .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;line-height:1.2}
 .fb-navrow{display:flex;justify-content:center;align-items:center;gap:14px;padding-top:6px}
-.fb-nav{width:48px;height:48px;border-radius:50%;border:0;background:#FD9C8A;color:#1F2733;font-size:24px;line-height:1;cursor:pointer;box-shadow:0 8px 18px -8px rgba(0,0,0,.6)}
+.fb-nav{width:48px;height:48px;border-radius:50%;border:0;background:#9DB3DA;color:#1F2733;font-size:24px;line-height:1;cursor:pointer;box-shadow:0 8px 18px -8px rgba(0,0,0,.6)}
 .fb-nav:disabled{opacity:.35;cursor:default}
-.fb-dots{display:flex;gap:6px}.fb-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}.fb-dots i.on{background:#FD9C8A}
+.fb-dots{display:flex;gap:6px}.fb-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}.fb-dots i.on{background:#9DB3DA}
 .fb-hint{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);color:#fff;font-size:.85rem;opacity:.75;pointer-events:none;white-space:nowrap;transition:opacity .3s}
 
 /* polish15 (review 21.11) */
@@ -820,7 +820,7 @@ html.ptr :focus,html.ptr :focus-visible{outline:none!important}
 .fb-pf{width:100%;height:100%}
 .fb-pg{background:#FFFDF9;overflow:hidden}
 .fb-pg img{display:block;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-select:none;user-select:none}
-.fb-pg.fb-end{background:linear-gradient(160deg,#FFF3EE,#FFFFFF)}
+.fb-pg.fb-end{background:linear-gradient(160deg,#EEF2FA,#FFFFFF)}
 .fb-endin{height:100%;display:grid;place-content:center;gap:14px;text-align:center;padding:10%;color:#1F2733}
 .fb-endin h4{font-family:var(--head),sans-serif;font-size:clamp(1.05rem,2.2vw,1.45rem);color:#2B4272;margin:0}
 .fb-endin p{margin:0;font-size:clamp(.85rem,1.5vw,.98rem);color:#48585F}
@@ -863,7 +863,12 @@ html.ptr :focus,html.ptr :focus-visible{outline:none!important}
   background:linear-gradient(90deg,rgba(0,0,0,.34),rgba(255,255,255,.18) 50%,rgba(0,0,0,.2)),var(--cv) left center/auto 100% no-repeat,#EFE8DB}
 .fb-stage.cov .fb-thick{opacity:1}
 @media (prefers-reduced-motion:reduce){.book.opening .b3d .bk-flap,.book.opening .b3d .bk-flap>i{animation:none}}
-</style><style>/* patch27 */.fb-buy{display:flex;flex-direction:column;align-items:center;gap:10px}.fb-endin .btn.ghost{min-height:44px;font-size:.92rem}</style></head>
+</style><style>/* patch27 */.fb-buy{display:flex;flex-direction:column;align-items:center;gap:10px}.fb-endin .btn.ghost{min-height:44px;font-size:.92rem}</style><style>/* colour variant v1_navy (Julia 24.11) */
+html body .cta .btn,html body .final .btn,html body header .hbtn,html body .buy .btn.primary,html body .fb-buy .btn.primary{background:#2B4272!important;border-color:#2B4272!important;color:#fff!important}
+html body .cta .btn,html body .final .btn{box-shadow:0 6px 0 #1B2A4A!important}
+html body header .hbtn{box-shadow:0 6px 16px -10px rgba(30,43,74,.55)!important}
+@media (hover:hover){html body .cta .btn:hover,html body .final .btn:hover{background:#3D5A94!important;box-shadow:0 9px 0 #1B2A4A,0 0 0 5px rgba(111,143,196,.28)!important}html body header .hbtn:hover,html body .buy .btn.primary:hover,html body .fb-buy .btn.primary:hover{background:#3D5A94!important;box-shadow:0 0 0 4px rgba(111,143,196,.3),0 10px 22px -10px rgba(30,43,74,.6)!important}}
+</style></head>
 <body id="top">
 <header><div class="wrap">
   <a class="brand" href="#top">Julia Mirku</a>
@@ -951,19 +956,19 @@ html.ptr :focus,html.ptr :focus-visible{outline:none!important}
     <div class="acc" id="acc">
       <div class="acc-item">
         <button type="button" class="acc-head"><span class="acc-num">01</span><span data-i18n="svc_be_t">Business English</span><span class="plus"></span></button>
-        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#EEF2FA"/><circle cx="48" cy="42" r="22" fill="#FFC857"/><circle cx="48" cy="42" r="30" fill="none" stroke="#FFC857" stroke-width="3" stroke-dasharray="3 7" opacity=".7"/><path d="M80 74v-9a8 8 0 0 1 8-8h24a8 8 0 0 1 8 8v9" fill="none" stroke="#17303A" stroke-width="5" stroke-linecap="round"/><rect x="40" y="74" width="120" height="64" rx="12" fill="#FB8671"/><path d="M40 100h120" stroke="#FFD9C7" stroke-width="4"/><rect x="90" y="92" width="20" height="17" rx="4" fill="#fff" stroke="#17303A" stroke-width="3"/><path d="M128 18h38a10 10 0 0 1 10 10v20a10 10 0 0 1-10 10h-20l-13 12V58h-5a10 10 0 0 1-10-10V28a10 10 0 0 1 10-10z" fill="#5B7BC0"/><path d="M130 33h30M130 44h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="170" cy="120" r="6" fill="#FFB59F"/><circle cx="24" cy="112" r="4" fill="#B9A7F0"/></svg></div><div class="acc-copy"><p data-i18n="svc_be_b">English for the work you actually do: meetings, negotiations, presentations, interviews and everyday emails. We work with material from your own field and build the language your role needs, so you can handle work situations in English with ease.</p></div></div></div></div>
+        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#EEF2FA"/><circle cx="48" cy="42" r="22" fill="#FFC857"/><circle cx="48" cy="42" r="30" fill="none" stroke="#FFC857" stroke-width="3" stroke-dasharray="3 7" opacity=".7"/><path d="M80 74v-9a8 8 0 0 1 8-8h24a8 8 0 0 1 8 8v9" fill="none" stroke="#17303A" stroke-width="5" stroke-linecap="round"/><rect x="40" y="74" width="120" height="64" rx="12" fill="#6F8FC4"/><path d="M40 100h120" stroke="#C9D6EE" stroke-width="4"/><rect x="90" y="92" width="20" height="17" rx="4" fill="#fff" stroke="#17303A" stroke-width="3"/><path d="M128 18h38a10 10 0 0 1 10 10v20a10 10 0 0 1-10 10h-20l-13 12V58h-5a10 10 0 0 1-10-10V28a10 10 0 0 1 10-10z" fill="#5B7BC0"/><path d="M130 33h30M130 44h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="170" cy="120" r="6" fill="#C9D6EE"/><circle cx="24" cy="112" r="4" fill="#B9A7F0"/></svg></div><div class="acc-copy"><p data-i18n="svc_be_b">English for the work you actually do: meetings, negotiations, presentations, interviews and everyday emails. We work with material from your own field and build the language your role needs, so you can handle work situations in English with ease.</p></div></div></div></div>
       </div>
       <div class="acc-item">
         <button type="button" class="acc-head"><span class="acc-num">02</span><span data-i18n="svc_cae_t">Cambridge Exam Preparation</span><span class="plus"></span></button>
-        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#FFF3E6"/><path d="M84 92l-16 50 22-12 13 10z" fill="#5B7BC0"/><path d="M116 92l16 50-22-12-13 10z" fill="#FB8671"/><circle cx="100" cy="62" r="40" fill="#FFC857"/><circle cx="100" cy="62" r="40" fill="none" stroke="#F4A93A" stroke-width="4" stroke-dasharray="6 6"/><circle cx="100" cy="62" r="28" fill="#fff"/><path d="M87 62l9 10 18-20" fill="none" stroke="#17303A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 40l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#B9A7F0"/><path d="M164 96l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#5B7BC0"/><circle cx="160" cy="34" r="6" fill="#FFB59F"/><circle cx="40" cy="112" r="5" fill="#FB8671"/></svg></div><div class="acc-copy"><p data-i18n="svc_cae_b">One-to-one preparation for Cambridge English exams: C1 Advanced (CAE), B2 First (FCE), B1 Preliminary (PET) and A2 Key (KET). You’ll learn how each paper works and how to approach every task, and your general English will improve along the way. We’ll choose your exam together and agree a realistic timeline.</p></div></div></div></div>
+        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#FFF3E6"/><path d="M84 92l-16 50 22-12 13 10z" fill="#5B7BC0"/><path d="M116 92l16 50-22-12-13 10z" fill="#6F8FC4"/><circle cx="100" cy="62" r="40" fill="#FFC857"/><circle cx="100" cy="62" r="40" fill="none" stroke="#F4A93A" stroke-width="4" stroke-dasharray="6 6"/><circle cx="100" cy="62" r="28" fill="#fff"/><path d="M87 62l9 10 18-20" fill="none" stroke="#17303A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 40l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#B9A7F0"/><path d="M164 96l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#5B7BC0"/><circle cx="160" cy="34" r="6" fill="#C9D6EE"/><circle cx="40" cy="112" r="5" fill="#6F8FC4"/></svg></div><div class="acc-copy"><p data-i18n="svc_cae_b">One-to-one preparation for Cambridge English exams: C1 Advanced (CAE), B2 First (FCE), B1 Preliminary (PET) and A2 Key (KET). You’ll learn how each paper works and how to approach every task, and your general English will improve along the way. We’ll choose your exam together and agree a realistic timeline.</p></div></div></div></div>
       </div>
       <div class="acc-item">
         <button type="button" class="acc-head"><span class="acc-num">03</span><span data-i18n="svc_ge_t">General English and speaking fluency</span><span class="plus"></span></button>
-        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#FFF3EE"/><rect x="24" y="26" width="100" height="62" rx="16" fill="#5B7BC0"/><path d="M46 86v18l20-18z" fill="#5B7BC0"/><path d="M44 49h62" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M44 65h40" stroke="#DCE4F5" stroke-width="5" stroke-linecap="round"/><path d="M100 76h60a14 14 0 0 1 14 14v24a14 14 0 0 1-14 14h-8v15l-17-15h-35a14 14 0 0 1-14-14V90a14 14 0 0 1 14-14z" fill="#FB8671"/><path d="M104 97h52" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M104 111h34" stroke="#FFD9C7" stroke-width="5" stroke-linecap="round"/><path d="M160 26l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#FFC857"/><circle cx="30" cy="128" r="7" fill="#FFB59F"/><circle cx="52" cy="136" r="4" fill="#B9A7F0"/></svg></div><div class="acc-copy"><p data-i18n="svc_ge_b">General English for adults on a flexible schedule. A typical pace is about three hours a week, which usually means one level in around nine months. We practise all the skills through topics that interest you, and your materials arrive digitally. In the free trial lesson we’ll check your level and choose a schedule that suits you.</p></div></div></div></div>
+        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#EEF2FA"/><rect x="24" y="26" width="100" height="62" rx="16" fill="#5B7BC0"/><path d="M46 86v18l20-18z" fill="#5B7BC0"/><path d="M44 49h62" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M44 65h40" stroke="#DCE4F5" stroke-width="5" stroke-linecap="round"/><path d="M100 76h60a14 14 0 0 1 14 14v24a14 14 0 0 1-14 14h-8v15l-17-15h-35a14 14 0 0 1-14-14V90a14 14 0 0 1 14-14z" fill="#6F8FC4"/><path d="M104 97h52" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M104 111h34" stroke="#C9D6EE" stroke-width="5" stroke-linecap="round"/><path d="M160 26l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#FFC857"/><circle cx="30" cy="128" r="7" fill="#C9D6EE"/><circle cx="52" cy="136" r="4" fill="#B9A7F0"/></svg></div><div class="acc-copy"><p data-i18n="svc_ge_b">General English for adults on a flexible schedule. A typical pace is about three hours a week, which usually means one level in around nine months. We practise all the skills through topics that interest you, and your materials arrive digitally. In the free trial lesson we’ll check your level and choose a schedule that suits you.</p></div></div></div></div>
       </div>
       <div class="acc-item">
         <button type="button" class="acc-head"><span class="acc-num">04</span><span data-i18n="svc_add_t">Also available</span><span class="plus"></span></button>
-        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#F3EEFC"/><rect x="128" y="22" width="44" height="56" rx="6" fill="#fff" stroke="#B9A7F0" stroke-width="3"/><path d="M137 38h26M137 49h26M137 60h16" stroke="#B9A7F0" stroke-width="4" stroke-linecap="round"/><rect x="50" y="80" width="88" height="58" rx="8" fill="#FFB59F"/><rect x="44" y="62" width="100" height="22" rx="7" fill="#5B7BC0"/><rect x="86" y="62" width="16" height="76" fill="#FB8671"/><path d="M94 62c-20 0-32-26-9-26 10 0 10 17 9 26zM94 62c20 0 32-26 9-26-10 0-10 17-9 26z" fill="#FB8671"/><circle cx="94" cy="60" r="5" fill="#FFC857"/><path d="M30 40l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#FFC857"/><circle cx="168" cy="118" r="6" fill="#FFC857"/><circle cx="32" cy="120" r="5" fill="#FB8671"/></svg></div><div class="acc-copy"><p data-i18n="svc_add_b1">CV help: I can write or translate your CV. Tell me about your experience and the job you’re applying for, and I’ll shape it for that role.</p><p data-i18n="svc_add_b2">Gift certificates: English lessons as a present for someone close to you. Any amount, for whichever lessons or course they choose. Message me and I’ll help you arrange it.</p></div></div></div></div>
+        <div class="acc-panel"><div class="acc-clip"><div class="acc-panel-inner"><div class="acc-illus"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="200" height="160" rx="16" fill="#F3EEFC"/><rect x="128" y="22" width="44" height="56" rx="6" fill="#fff" stroke="#B9A7F0" stroke-width="3"/><path d="M137 38h26M137 49h26M137 60h16" stroke="#B9A7F0" stroke-width="4" stroke-linecap="round"/><rect x="50" y="80" width="88" height="58" rx="8" fill="#C9D6EE"/><rect x="44" y="62" width="100" height="22" rx="7" fill="#5B7BC0"/><rect x="86" y="62" width="16" height="76" fill="#6F8FC4"/><path d="M94 62c-20 0-32-26-9-26 10 0 10 17 9 26zM94 62c20 0 32-26 9-26-10 0-10 17-9 26z" fill="#6F8FC4"/><circle cx="94" cy="60" r="5" fill="#FFC857"/><path d="M30 40l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#FFC857"/><circle cx="168" cy="118" r="6" fill="#FFC857"/><circle cx="32" cy="120" r="5" fill="#6F8FC4"/></svg></div><div class="acc-copy"><p data-i18n="svc_add_b1">CV help: I can write or translate your CV. Tell me about your experience and the job you’re applying for, and I’ll shape it for that role.</p><p data-i18n="svc_add_b2">Gift certificates: English lessons as a present for someone close to you. Any amount, for whichever lessons or course they choose. Message me and I’ll help you arrange it.</p></div></div></div></div>
       </div>
     </div>
   </div>
