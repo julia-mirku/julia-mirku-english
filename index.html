@@ -868,7 +868,12 @@ html body .cta .btn,html body .final .btn,html body header .hbtn,html body .buy 
 html body .cta .btn,html body .final .btn{box-shadow:0 6px 0 #1B2A4A!important}
 html body header .hbtn{box-shadow:0 6px 16px -10px rgba(30,43,74,.55)!important}
 @media (hover:hover){html body .cta .btn:hover,html body .final .btn:hover{background:#3D5A94!important;box-shadow:0 9px 0 #1B2A4A,0 0 0 5px rgba(111,143,196,.28)!important}html body header .hbtn:hover,html body .buy .btn.primary:hover,html body .fb-buy .btn.primary:hover{background:#3D5A94!important;box-shadow:0 0 0 4px rgba(111,143,196,.3),0 10px 22px -10px rgba(30,43,74,.6)!important}}
-</style></head>
+</style><style>/* books-first hero (Julia 24.11) */
+.hero .mybooks{margin:22px 0 6px}.hero .mybooks img{width:92px}
+@media (max-width:860px){.hero .mybooks img{width:64px}}
+.cta .trial2::before{content:"";flex:0 0 9px;width:9px;height:9px;margin-right:10px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 2px #fff}
+.cta .trial2{display:inline-flex;align-items:center}
+</style><style>.hero .cta{align-items:flex-start}.cta .trialcol{display:flex;flex-direction:column;align-items:center}.cta .trialcol .small{margin:8px 0 0}@media (max-width:420px){.cta .trialcol{flex:1 1 100%;align-items:stretch}.cta .trialcol .small{text-align:center}}</style></head>
 <body id="top">
 <header><div class="wrap">
   <a class="brand" href="#top">Julia Mirku</a>
@@ -882,12 +887,11 @@ html body header .hbtn{box-shadow:0 6px 16px -10px rgba(30,43,74,.55)!important}
     <h1 data-i18n="hero_title">English Language Trainer</h1>
     <p class="hero-sub" data-i18n="hero_sub"><span>Business English</span><span>Cambridge exams</span><span>General English</span><span>Speaking fluency</span></p>
     <p class="hero-line" data-i18n="hero_line">Online one-to-one lessons for adults, wherever you live.</p>
-    <div class="cta"><a class="btn" href="#contact" data-i18n="hero_cta">Book a free trial lesson</a><a class="btn2" href="#books" data-i18n="hero_books">See my books</a></div>
-    <p class="small" data-i18n="hero_small">30 minutes · free</p>
-    <ul class="facts"><li><b data-i18n="f1b">14+ years</b><span data-i18n="f1t"> of teaching</span></li><li><b data-i18n="f2b">50-minute</b><span data-i18n="f2t"> lessons</span></li><li><span data-i18n="f3t">Reply </span><b data-i18n="f3b">within a day</b></li></ul>
+    <div class="cta"><a class="btn" href="#books" data-i18n="hero_books">See my books</a><div class="trialcol"><a class="btn2 trial2" href="#contact" data-i18n="hero_cta">Book a free trial lesson</a><p class="small" data-i18n="hero_small">30 minutes · free</p></div></div>
     <div class="mybooks">
       <div class="shelf"><a href="#books" data-code="rKWIM" tabindex="-1" aria-hidden="true"><img src="covers/rKWIM.jpg" alt=""></a><a href="#books" data-code="5LyWR" tabindex="-1" aria-hidden="true"><img src="covers/5LyWR.jpg" alt=""></a><a href="#books" data-code="8ApEs" tabindex="-1" aria-hidden="true"><img src="covers/8ApEs.jpg" alt=""></a><a href="#books" data-code="uE0n6" tabindex="-1" aria-hidden="true"><img src="covers/uE0n6.jpg" alt=""></a><a href="#books" data-code="XUs3I" tabindex="-1" aria-hidden="true"><img src="covers/XUs3I.jpg" alt=""></a><a href="#books" data-code="2dAgE" tabindex="-1" aria-hidden="true"><img src="covers/2dAgE.jpg" alt=""></a><a href="#books" data-code="6f5Ah" tabindex="-1" aria-hidden="true"><img src="covers/6f5Ah.jpg" alt=""></a></div>
     </div>
+    <ul class="facts"><li><b data-i18n="f1b">14+ years</b><span data-i18n="f1t"> of teaching</span></li><li><b data-i18n="f2b">50-minute</b><span data-i18n="f2t"> lessons</span></li><li><span data-i18n="f3t">Reply </span><b data-i18n="f3b">within a day</b></li></ul>
   </div>
   <div class="visual"><div class="cut"><img src="img/portrait.png" alt="Julia Mirku"></div></div>
 </div></section>
